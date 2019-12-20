@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebf6fa"
+    tools:context=".EditProfile"
+    android:layout_weight="1">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/innerpagelogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="520dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#fff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:id="@+id/userFristname_text_input_layout"
+            android:layout_width="360dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit My Profile"
+            android:textColor="#DA1876C0"
+            android:textSize="22sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily=""/>
+            <EditText
+                android:id="@+id/etfristUsername"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edit"
+                android:padding="10dp"
+                android:hint="Name"
+                android:textColorHint="#161212" />
+
+
+            <EditText
+                android:id="@+id/etshopUser"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:ems="10"
+                android:layout_marginTop="140dp"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit"
+
+                android:layout_marginEnd="20dp"
+                android:textColorHint="#161212"
+                android:hint="Shop Name" />
+
+
+            <EditText
+                android:id="@+id/etUseradd"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Address"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit"
+
+                android:textColorHint="#161212" />
+
+
+            <EditText
+                android:id="@+id/etmobile"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="220dp"
+                android:textColorHint="#161212"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@drawable/custom_edit"
+                android:inputType="number"
+                android:hint="Mobile Number" />
+
+
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_submit"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="420dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="568dp" />
+
+            <Button
+                android:id="@+id/btn_change_password"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="420dp"
+                android:layout_marginBottom="224dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/btn_custom"
+                android:text="Change Password"
+                android:textAllCaps="false"
+                tools:layout_editor_absoluteX="215dp"
+                tools:layout_editor_absoluteY="568dp" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

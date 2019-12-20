@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/recycle_back"
+        android:orientation="vertical"
+        android:padding="3dp"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="-6dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txt_Order_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#181414"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/txt_Dispatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#181414"
+            android:textSize="10sp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_Notes"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginStart="140dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="17dp"-->
+            <!--android:textSize="10sp"-->
+            <!--android:textColor="#181414" />-->
+
+        <TextView
+            android:id="@+id/txt_OrderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="19dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="#3aba7e"
+            android:textSize="10sp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_admin_Notes"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginStart="270dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:textSize="10sp"-->
+            <!--android:textColor="#181414"-->
+            <!--android:layout_marginBottom="19dp" />-->
+
+        <TextView
+            android:id="@+id/txt_admin_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/alegreya_sc"
+            android:text="View Details->"
+            android:textColor="#49c1e9"
+            android:textSize="10sp" />
+        <!--</RelativeLayout>-->
+    </RelativeLayout>
+</LinearLayout>

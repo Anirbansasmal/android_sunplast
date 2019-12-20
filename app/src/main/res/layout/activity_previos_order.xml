@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/innerpagelogo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="360dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:id="@+id/btn_cart"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="141dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="415dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_layers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:background="@drawable/edit_note"
+                android:layout_marginEnd="19dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn_proceed"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_custom"
+                android:text="Proceed"
+                android:textAllCaps="false"
+                android:layout_marginTop="350dp"
+                android:layout_marginStart="20dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="366dp" />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="220dp"
+    android:gravity="start"
+    android:hint="Add a note"
+    android:padding="12dp"
+    android:textColorHint="#4CAF50"
+    android:background="@drawable/edit_note"
+    android:textColor="#F0E3E3"/>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Cart Details"
+        android:textColor="#03A9F4"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="106dp" />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--tools:layout_editor_absoluteX="3dp"-->
+        <!--tools:layout_editor_absoluteY="141dp">-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/recycle_back"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.47"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent">-->
+
+
+
+        <!--</RelativeLayout>-->
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!---->
+<!--<com.google.android.flexbox.FlexboxLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:flexDirection="row"-->
+    <!--app:flexWrap="wrap"-->
+    <!--app:justifyContent="center"/>-->
+
+<!--</com.google.android.flexbox.FlexboxLayout>-->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="94dp"
+        android:src="@drawable/innerpagelogo"
+        app:layout_constraintBottom_toTopOf="@+id/recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout_editor_absoluteX="360dp"-->
+        <!--tools:layout_editor_absoluteY="16dp"-->
+        <!--android:id="@+id/btn_cart"-->
+        <!--tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Select Catagories"
+        android:textColor="#03A9F4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/recycler"
+        app:layout_constraintEnd_toStartOf="@+id/btn_back"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+<!--<ScrollView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <ScrollView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_Catagories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginEnd="19dp"
+                android:background="@drawable/edit_note">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn_proceed"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="203dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/btn_bgn_inc"
+                android:text="Proceed"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.766"
+                tools:ignore="MissingConstraints" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="256dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/edit_note"
+                android:gravity="start"
+                android:hint="Add a note"
+                android:padding="9dp"
+                android:textColor="#1A0C0C"
+                android:textColorHint="#4CAF50"
+                android:textSize="30px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp">
+
+                    <TextView
+                        android:id="@+id/txt_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="29dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Name"
+                        android:textColor="#181414" />
+
+                    <TextView
+                        android:id="@+id/txt_Qty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="170dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="Qty"
+                        android:textColor="#181414" />
+
+                    <TextView
+                        android:id="@+id/txt_Alt_Qty"
+                        android:layout_width="53dp"
+                        android:layout_height="18dp"
+                        android:layout_alignStart="@+id/txt_Name"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="192dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Alt Qty"
+                        android:textColor="#181414" />
+
+                    <TextView
+                        android:id="@+id/txt_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_alignStart="@+id/txt_Name"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="259dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Remove"
+                        android:textColor="#181414" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edit_note">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+            <!--</RelativeLayout>-->
+
+
+            <EditText
+                android:id="@+id/txt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="550dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/edit_note"
+                android:gravity="start"
+                android:hint="Add a note"
+                android:padding="9dp"
+                android:textColor="#F0E3E3"
+                android:textSize="10dp"
+                android:textColorHint="#4CAF50"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <EditText
+                android:id="@+id/txt_addnote"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="517dp"
+                android:layout_marginEnd="22dp"
+                android:background="@drawable/edit_note"
+                android:gravity="start"
+                android:hint="Add a note"
+                android:padding="9dp"
+                android:textColor="#F0E3E3"
+                android:textColorHint="#4CAF50"
+                android:textSize="30px"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/btn_proceed"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="457dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/btn_bgn_inc"
+                android:text="save"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.766"
+                tools:ignore="MissingConstraints" />
+            <RelativeLayout
+                android:id="@+id/recycler_order_previous"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="680dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_note"
+                    android:gravity="start"
+                    android:hint="Add a note"
+                    android:padding="9dp"
+                    android:textColor="#1A0C0C"
+                    android:textColorHint="#4CAF50"
+                    android:textSize="30px"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp">
+
+                        <TextView
+                            android:id="@+id/txt_Name1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="29dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Name"
+                            android:textColor="#181414" />
+
+                        <TextView
+                            android:id="@+id/txt_Qty1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="170dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="7dp"
+                            android:text="Qty"
+                            android:textColor="#181414" />
+
+                        <TextView
+                            android:id="@+id/txt_Alt_Qty1"
+                            android:layout_width="53dp"
+                            android:layout_height="18dp"
+                            android:layout_alignStart="@+id/txt_Name1"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="192dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Alt Qty"
+                            android:textColor="#181414" />
+
+                        <TextView
+                            android:id="@+id/txt_delete1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_alignStart="@+id/txt_Name1"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="259dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="9dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Remove"
+                            android:textColor="#181414" />
+                    </RelativeLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_order"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/edit_note"
+                        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+                        android:divider="@android:color/darker_gray"
+                        android:dividerHeight="0.5dp">
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                    <!--<androidx.recyclerview.widget.RecyclerView-->
+                        <!--android:id="@+id/recycler_order"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_marginTop="130dp"-->
+                        <!--android:background="@drawable/edit_note">-->
+
+                    <!--</androidx.recyclerview.widget.RecyclerView>-->
+
+                    <EditText
+                        android:id="@+id/txt_edit_note"
+                        android:layout_width="326dp"
+                        android:layout_height="90dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="380dp"
+                        android:layout_marginEnd="3dp"
+                        android:background="@drawable/edit_note"
+                        android:gravity="start"
+                        android:hint="Add a note"
+                        android:padding="9dp"
+                        android:textColor="#F0E3E3"
+                        android:textColorHint="#4CAF50"
+                        android:textSize="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="340dp"
+                        android:layout_marginEnd="3dp"
+                        android:background="@drawable/edit_note"
+                        android:gravity="start"
+                        android:hint="Add a note"
+                        android:padding="9dp"
+                        android:textColor="#F0E3E3"
+                        android:textColorHint="#4CAF50"
+                        android:inputType="none"
+                        android:textSize="30px"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/btn_proceed_cart"
+                        android:layout_width="140dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="482dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/btn_bgn_inc"
+                        android:text="Submit Order"
+                        android:inputType="none"
+                        android:textAllCaps="false"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.766"
+                        tools:ignore="MissingConstraints" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/btn_custom"
+        android:drawableRight="@drawable/ic_arrow_back_black_24dp"
+        android:padding="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        android:text="Submit Order"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+<!--</ScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
